@@ -1,0 +1,20 @@
+Dentro da pasta principal do projeto \ PAra transformar o projeto em node 
+
+1. Acessar o terminal do vscode
+
+Para transformar a pasta m um Projeto Node 
+2. npm init -y
+
+Para instalar o express (para criar o server)
+3. npm install express
+
+Para instalar o mysql driver
+$. npm install mysql2
+
+
+
+    //JSON.Stringfy // trasforma em string 
+    //json() / função converte string em objeto
+    //servidor receebe em string 
+    // formato sting console.log(JSON.stringify(produto)) 
+    // formato js console.log(produto)

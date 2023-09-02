@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Verde | Alteração</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="assets/js/alerta.js"></script>
+    <script src="assets/js/validacao.js"></script>
+    <script src="assets/js/alterar.js"></script>
+</head>
+
+<div class="container">
+    <div id="alerta"></div>
+    <h2 class="mt-4">Alteração de Produtos</h2>
+    <form action="http://localhost:3000/produtos" method="post"></form>
+    <fieldset>
+        <div class="form-group mt-2">
+            <label for="id">Código</label>
+            <input type="text" id="id" class="form-control" readonly>
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="id">Descrição</label>
+            <input type="text" id="descricao" name="descricao" class="form-control" required>
+        </div>
+
+        <div class="form-group mt-4">
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria" class="form-select">]
+                <option value="0">Cereais</option>
+                <option value="1">Suplementos</option>
+                <option value="2">Temperos</option>
+            </select>
+
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="preco">Preço</label>
+            <input type="text" id="preco" name="preco" class="form-control">
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="quantidade">Quantidade de estoques</label>
+            <input type="number" id="quantidade" name="quantidade" class="form-control">
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="url">URL imagem</label>
+            <input type="text" id="url" name="url" class="form-control">
+        </div>
+
+        <div class="mt-4">
+            <input type="button" class="btn btn-outline-success" value="Atualizar" onclick="atualizar()">
+            <a href="gerenciar.html" class="btn btn-outline-danger">Voltar</a>
+        </div>
+
+    </fieldset>
+</div>
+
+<body>
+
+</body>
+
+</html>
